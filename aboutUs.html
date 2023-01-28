@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BuyAnything</title>
+        <link rel="icon" href="assets/logo.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function displayMemberInfo(name, studentNumber){
+                document.getElementById("student"+studentNumber).innerHTML = name+"<br>"+" Student: "+studentNumber;
+            }
+            function removeInfo(studentNumber){
+                document.getElementById("student"+studentNumber).innerHTML = null;
+            }
+        </script>
+    </head>
+    <body>
+    <header>
+        <div class="navbar">
+            <a href="main.html"><img class="logo" src="assets/logoBlack.svg" alt="logo"></a>
+            <nav>
+                <ul class="links" id="menuItems">
+                    <li><a href="productPage.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+            <img class="searchIcon" src="assets/search.svg" alt="search button">
+            <img class="menuIcon" src="assets/menu.svg" alt="menu button" onclick="menuToggle()">
+        </div>
+    </header>
+        <div class="about-us">
+            <h1 id="header">About us</h1>
+            <div class="aboutus-row"> <!--Pictures-->
+                <div class="member-column"><!--Member 1-->
+                    <div class="person-container">
+                        <img class="headshot" onmouseover="displayMemberInfo('Puspasothy Seyon', '1')" onmouseleave="removeInfo('1')" src="assets/seyon.jpeg" alt="">
+                        <a href="mailto:seyon.20210591@iit.ac.lk"> <div class="contact"> Contact</div></a>
+                    </div>
+                </div>
+                <div class="member-column"><!--Member 2-->
+                    <div class="person-container">
+                        <img class="headshot" onmouseover="displayMemberInfo('Mishaal Rifath', '2')" onmouseleave="removeInfo('2')" src="assets/mishaal.jpeg" alt="">
+                        <a href="mailto:mishaal.20210822@iit.ac.lk"> <div class="contact"> Contact</div></a>
+                    </div>
+                </div>
+                <div class="member-column"><!--Member 3-->
+                    <div class="person-container">
+                        <img class="headshot" onmouseover="displayMemberInfo('Yohan Abhishek', '3')" onmouseleave="removeInfo('3')" src="assets/yohan.jpeg" alt="">
+                        <a href="mailto:yohan.20200509@iit.ac.lk"> <div class="contact"> Contact</div></a>
+                    </div>
+                </div>
+                <div class="member-column"> <!--Member 4-->
+                    <div class="person-container">
+                        <img class="headshot" onmouseover="displayMemberInfo('Inuka Rodrigo', '4')" onmouseleave="removeInfo('4')" src="assets/inuka.jpeg" alt="">
+                        <a href="mailto:inuka.20210508@iit.ac.lk"> <div class="contact"> Contact</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus-row"> 
+                <div class="member-column" id="student1"></div>
+                <div class="member-column" id="student2"></div>
+                <div class="member-column" id="student3"></div>
+                <div class="member-column" id="student4"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="row">
+                    <div class="footer1">
+                        <img src="assets/logoWhite.svg" alt="logo">
+
+                    </div>
+                    <div class="footer2">
+                        <h3>&#169; 2022 Buyanything.</h3>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                    <div class="footer3">
+                        <h3>Useful links</h3>
+                        <ul class="footerLinks">
+                            <li><a href="main.html">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer4">
+                        <h3>Contact Us</h3>
+                        <ul class="footerLinks">
+                            <li><a href="editorsPage/editorsPage3.html">Editors Page</a></li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

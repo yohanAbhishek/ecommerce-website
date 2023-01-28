@@ -1,0 +1,69 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  padding: 30px;
+}
+
+img{ 
+  position: relative;
+  padding-top: 25px;
+  width: 500px;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  padding-top: 10px;
+}
+  
+.column {
+  flex: 50%;
+  margin-left: 40px;
+}
+
+
+.product-title{
+  padding-top: 90px;
+  text-transform: uppercase;
+}
+
+.product-description{
+  letter-spacing: 1px;
+  padding-top: 75px;
+  word-spacing: 5px;
+  justify-content: center;
+  width: 400px;
+}
+
+.product-description-title{
+  text-transform: uppercase;
+  float: left;
+  font-size: xx-large;
+}
+
+
+.change-font-container{
+  flex: 0;
+  position: relative;
+  margin-top: 100px;
+  margin: 20px;
+  height: 35px;
+}
+
+.font-button{
+  margin: 0;
+  color: #fff;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  border: 0;
+  cursor: pointer;
+}
+
+#bottlePrice{
+  position: absolute;
+}

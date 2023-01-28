@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="prodcutItems.css">
+        <link rel="icon" href="../assets/logo.png" type="image/x-icon">
+        <title>Buyanything | White cap</title>
+        <script type="text/javascript" src="../script.js"></script>
+    </head>
+    
+    <body id="resetFont">
+        <div class="change-font-container">
+            <button class="font-button" onclick="changeFontSize('increase')">A+</button>
+            <button class="font-button" onclick="changeFontSize('decrease')">A-</button>
+            <button class="font-button" onclick="changeFontSize('reset')">reset</button>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="../assets/cap2.jpeg" alt="">
+            </div>
+            <div class="column">
+                <h2 class="product-description-title">Product description</h2>
+                <p class="product-description">
+                    The wolves stopped in their tracks, sizing up the mother and her cubs. It had been over a week since their last meal and they were getting desperate. The cubs would make a good meal, but there were high risks taking on the mother Grizzly. A decision had to be made and the wrong choice could signal the end of the pack.
+                    <div id="capPrice">
+                        <script>document.getElementById("capPrice").innerHTML = "LKR "+cap.price;</script>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>
